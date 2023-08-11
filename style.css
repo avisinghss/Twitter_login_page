@@ -1,0 +1,242 @@
+body {
+  background: grey;
+}
+.login-box {
+  background-color: white;
+  padding: 30px 120px;
+  width: 30%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-45%);
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.login-box h2 {
+  margin-bottom: 10px;
+}
+.login-box button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.login-box button:hover {
+  background-color: lightgray;
+}
+.login-box button {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid black;
+  font-weight: 500;
+  cursor: pointer;
+}
+.login-box hr {
+  border: 0;
+  height: 1px;
+  background: black;
+  margin: 5px;
+}
+.login-box span {
+  display: block;
+  width: 40px;
+  margin: auto;
+  background: white;
+  font-size: 14px;
+  margin-top: -16px;
+}
+.login-box input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid black;
+  outline: 0;
+  padding: 15px 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+::placeholder {
+  font-weight: 500;
+  color: #333;
+}
+/* .login-box form button {
+  background: rgb(227, 221, 221);
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 10px 0;
+} */
+.login-box p {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+  margin: 40px 0 50px 0;
+}
+.login-box a {
+  text-decoration: none;
+  color: rgb(12, 12, 14);
+  font-weight: 700;
+  margin-left: 10px;
+}
+#sign {
+  color: blue;
+}
+/* added blended here */
+.img-bg{
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+}
+#googlelogin {
+  height: 0;
+  width: 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+#googlelogin:target {
+  height: 70%;
+  width: 70%;
+  background-image: url(./img/Gmail\ signin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  top: 10%;
+  left: 2%;
+}
+#appleid {
+  height: 0;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+#appleid:target {
+  height: 70%;
+  width: 70%;
+  background-image: url(./img/appleid.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  top: 10%;
+  left: 2%;
+}
+#next-btn{
+  margin-top: -10px;
+  background: black;
+  color: white;
+}
+#nextbtn {
+  height: 0;
+  width: 0;
+  position: fixed;
+  top: -5;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+#nextbtn:target {
+  height: 70%;
+  width: 70%;
+  background-image: url(./img/Next.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  top: 10%;
+  left: 5%;
+}
+#forgot {
+  height: 0;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+#forgot:target {
+  height: 70%;
+  width: 70%;
+  background-image: url(./img/IMG_20230811_183945.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  top: 10%;
+  left: 5%;
+}
+#signup {
+  height: 0;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+#signup:target {
+  height: 70%;
+  width: 70%;
+  background-image: url(./img/signin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  top: 50px;
+  left: 0.5%;
+}
+@media(max-width: 420px){
+  .logo{
+    width: 20px;
+    height: 20px;
+  }
+  h2{
+    font-size: small;
+  }
+.login-box{
+  margin-top:auto;
+  /* left: auto; */
+  width: 90%;
+  padding: 10px;
+  left: 45%;
+  height: auto;
+}
+.login-box button{
+  font-size: 12px;
+  padding: -10px;
+  margin-top: -20px;
+}
+#text-box{
+  width: 80%;
+  margin-top: 10px;
+  height: 1%;
+}
+#next-btn{
+  margin-top: 5px;
+
+}
+#googlelogin:target{
+  height: 70%;
+  width: 130%;
+ background-size: 100%;
+ left: -30px;
+ top: -30px;
+ margin-top: -5px;
+}
+#appleid:target {
+  height: 60%;
+  width: 160%;
+ background-position: center;
+ background-size: 200px;
+ left: -60px;
+ margin-top: 50px;
+ top: 10px;
+}
+}
